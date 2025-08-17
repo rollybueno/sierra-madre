@@ -11,6 +11,16 @@
 			"area": "footer",
 			"name": "footer",
 			"title": "Site Footer"
+		},
+		{
+			"area": "uncategorized",
+			"name": "three-query",
+			"title": "Three Query"
+		},
+		{
+			"area": "uncategorized",
+			"name": "query",
+			"title": "Query"
 		}
 	],
 	"settings": {
