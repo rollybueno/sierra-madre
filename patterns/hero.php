@@ -1,8 +1,8 @@
 <?php
 /**
  * Title: Hero
- * Slug: sierra-journal/hero
- * Category: sierra-journal, hero
+ * Slug: sierra-madre/hero
+ * Category: sierra-madre, hero
  */
 ?>
    <!-- wp:cover {"url":"<?php echo esc_url( get_template_directory_uri() ); ?>/assets/images/retro-brand.svg","id":2065,"dimRatio":50,"customOverlayColor":"#7d8aa8","isUserOverlayColor":false,"isDark":false,"sizeSlug":"full","align":"full","layout":{"type":"constrained"}} -->

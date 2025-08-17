@@ -1,8 +1,8 @@
 <?php
 /**
  * Title: Header
- * Slug: sierra-journal/header
- * Category: sierra-journal, header
+ * Slug: sierra-madre/header
+ * Category: sierra-madre, header
  */
 ?>
 <!-- wp:group {"layout":{"type":"constrained","contentSize":"1600px"}} -->

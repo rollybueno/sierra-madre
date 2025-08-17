@@ -1,8 +1,8 @@
 <?php
 /**
  * Title: Footer
- * Slug: sierra-journal/footer
- * Category: sierra-journal, footer
+ * Slug: sierra-madre/footer
+ * Category: sierra-madre, footer
  */
 ?>
 <!-- wp:group {"className":"has-white-color has-text-color is-footer","layout":{"type":"constrained","contentSize":"1600px"}} -->
