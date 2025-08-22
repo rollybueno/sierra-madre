@@ -5,10 +5,8 @@
  * Category: sierra-madre, hero
  */
 ?>
-   <!-- wp:cover {"url":"<?php echo esc_url( get_template_directory_uri() ); ?>/assets/images/retro-brand.svg","id":2065,"dimRatio":50,"customOverlayColor":"#7d8aa8","isUserOverlayColor":false,"isDark":false,"sizeSlug":"full","align":"full","layout":{"type":"constrained"}} -->
-    <div class="wp-block-cover alignfull is-light"><img class="wp-block-cover__image-background wp-image-2065 size-full" alt="" src="<?php echo esc_url( get_template_directory_uri() ); ?>/assets/images/retro-brand.svg" data-object-fit="cover" />
-    <span aria-hidden="true" class="wp-block-cover__background has-background-dim" style="background-color:#7d8aa8"></span>
-        <div class="wp-block-cover__inner-container">
+<!-- wp:cover {"url":"http://localhost:10068/wp-content/themes/sierra-journal/assets/images/nature-landscape.jpg","dimRatio":0,"sizeSlug":"full","align":"full","layout":{"type":"constrained"}} -->
+<div class="wp-block-cover alignfull"><img class="wp-block-cover__image-background size-full" alt="" src="http://localhost:10068/wp-content/themes/sierra-journal/assets/images/nature-landscape.jpg" data-object-fit="cover"/><span aria-hidden="true" class="wp-block-cover__background has-background-dim-0 has-background-dim"></span><div class="wp-block-cover__inner-container">
             <!-- wp:heading {"textAlign":"center","level":1} -->
             <h1 class="wp-block-heading has-text-align-center"><?php esc_html_e( 'Embrace the Wild Outdoors', 'sierra-madre' ); ?></h1>
             <!-- /wp:heading -->
