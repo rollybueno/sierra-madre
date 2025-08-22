@@ -1,0 +1,147 @@
+header{
+    font-size: 1rem;
+}
+
+header .wp-block-group {
+    padding: 5px;
+}
+
+/* Header Navigation Styling - Scoped to header only */
+header .wp-block-navigation {
+    font-family: var(--wp--preset--font-family--roboto);
+    font-weight: 500;
+}
+
+header .wp-block-navigation .wp-block-navigation-item {
+    margin: 0;
+    padding: 0;
+}
+
+header .wp-block-navigation .wp-block-navigation-item__content {
+    color: var(--wp--preset--color--text);
+    text-decoration: none;
+    padding: 12px 20px;
+    display: block;
+    transition: all 0.3s ease;
+    border-radius: 6px;
+    font-weight: 500;
+    position: relative;
+}
+
+/* Consistent hover color for ALL navigation items */
+header .wp-block-navigation .wp-block-navigation-item__content:hover {
+    color: var(--wp--preset--color--link);
+    background-color: rgba(0, 111, 142, 0.15);
+}
+
+/* Focus states for accessibility */
+header .wp-block-navigation .wp-block-navigation-item__content:focus {
+    outline: 2px solid var(--wp--preset--color--cta);
+    outline-offset: 2px;
+    color: var(--wp--preset--color--cta);
+    background-color: rgba(255, 210, 48, 0.1);
+}
+
+/* Keyboard navigation support */
+header .wp-block-navigation .wp-block-navigation-submenu:focus-within .wp-block-navigation-submenu__container {
+    opacity: 1;
+    visibility: visible;
+    transform: translateY(0);
+}
+
+/* High contrast mode support */
+@media (prefers-contrast: high) {
+    header .wp-block-navigation .wp-block-navigation-item__content:hover,
+    header .wp-block-navigation .wp-block-navigation-item__content:focus {
+        outline: 3px solid var(--wp--preset--color--cta);
+        outline-offset: 1px;
+    }
+}
+
+/* Reduced motion support */
+@media (prefers-reduced-motion: reduce) {
+    header .wp-block-navigation .wp-block-navigation-item__content,
+    header .wp-block-navigation .wp-block-navigation-submenu__container {
+        transition: none;
+    }
+}
+
+/* Active/current page styling */
+header .wp-block-navigation .wp-block-navigation-item.is-current .wp-block-navigation-item__content {
+    color: var(--wp--preset--color--cta);
+    background-color: rgba(255, 210, 48, 0.15);
+    font-weight: 600;
+}
+
+/* Submenu styling - Header scoped only */
+header .wp-block-navigation .wp-block-navigation-submenu {
+    position: relative;
+}
+
+header .wp-block-navigation .wp-block-navigation-submenu .wp-block-navigation-item__content {
+    position: relative;
+}
+
+/* Submenu dropdown */
+header .wp-block-navigation .wp-block-navigation-submenu .wp-block-navigation-submenu__container {
+    position: absolute;
+    top: 100%;
+    left: 0;
+    background: white;
+    border: 1px solid #e5e5e5;
+    border-radius: 8px;
+    box-shadow: 0 4px 20px rgba(0, 0, 0, 0.1);
+    min-width: 200px;
+    z-index: 1000;
+    opacity: 0;
+    visibility: hidden;
+    transform: translateY(-10px);
+    transition: all 0.3s ease;
+    padding: 8px 0;
+}
+
+/* Show submenu on hover */
+header .wp-block-navigation .wp-block-navigation-submenu:hover .wp-block-navigation-submenu__container {
+    opacity: 1;
+    visibility: visible;
+    transform: translateY(0);
+}
+
+/* Submenu items */
+header .wp-block-navigation .wp-block-navigation-submenu .wp-block-navigation-item {
+    margin: 0;
+    padding: 0;
+}
+
+header .wp-block-navigation .wp-block-navigation-submenu .wp-block-navigation-item__content {
+    padding: 10px 20px;
+    color: var(--wp--preset--color--text);
+    font-size: 0.9rem;
+    border-radius: 0;
+    background: transparent;
+}
+
+header .wp-block-navigation .wp-block-navigation-submenu .wp-block-navigation-item__content:hover {
+    color: var(--wp--preset--color--link);
+    background-color: rgba(0, 111, 142, 0.15);
+}
+
+/* Mobile navigation adjustments */
+@media (max-width: 768px) {
+    header .wp-block-navigation .wp-block-navigation-item__content {
+        padding: 15px 20px;
+        font-size: 1.1rem;
+    }
+    
+    header .wp-block-navigation .wp-block-navigation-submenu .wp-block-navigation-submenu__container {
+        position: static;
+        box-shadow: none;
+        border: none;
+        background: rgba(0, 0, 0, 0.02);
+        margin-left: 20px;
+        border-radius: 0;
+        opacity: 1;
+        visibility: visible;
+        transform: none;
+    }
+}
