@@ -20,11 +20,19 @@
             <div class="wp-block-group">
                 <!-- wp:query {"queryId":0,"query":{"perPage":3,"pages":0,"offset":0,"postType":"post","order":"desc","orderBy":"date","author":"","search":"","exclude":[],"sticky":"exclude","inherit":false},"metadata":{"categories":["posts"],"patternName":"core/query-grid-posts","name":"Grid"},"layout":{"type":"default"}} -->
                 <div class="wp-block-query"><!-- wp:post-template {"layout":{"type":"grid","columnCount":3}} -->
-                    <!-- wp:group {"style":{"spacing":{"padding":{"top":"30px","right":"10px","bottom":"30px","left":"10px"}}},"layout":{"inherit":false}} -->
-                    <div class="wp-block-group" style="padding-top:30px;padding-right:10px;padding-bottom:30px;padding-left:10px">
-                        <!-- wp:post-featured-image /-->
-
-                        <!-- wp:post-title {"isLink":true} /-->
+                    <!-- wp:group {"className":"post-card","style":{"spacing":{"padding":{"top":"0","right":"0","bottom":"0","left":"0"}}},"layout":{"inherit":false}} -->
+                    <div class="wp-block-group post-card" style="padding-top:0;padding-right:0;padding-bottom:0;padding-left:0">
+                        <!-- wp:group {"className":"post-image-container","layout":{"type":"default"}} -->
+                        <div class="wp-block-group post-image-container">
+                            <!-- wp:post-featured-image {"className":"post-featured-image"} /-->
+                            
+                            <!-- wp:group {"className":"post-title-overlay","layout":{"type":"default"}} -->
+                            <div class="wp-block-group post-title-overlay">
+                                <!-- wp:post-title {"isLink":true,"className":"overlay-title"} /-->
+                            </div>
+                            <!-- /wp:group -->
+                        </div>
+                        <!-- /wp:group -->
                     </div>
                     <!-- /wp:group -->
                     <!-- /wp:post-template -->

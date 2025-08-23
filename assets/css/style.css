@@ -272,3 +272,152 @@ header .wp-block-navigation .wp-block-navigation-submenu .wp-block-navigation-it
         transform: none;
     }
 }
+
+/* ==========================================================================
+   7. HERO & POST CARD STYLING
+   ========================================================================== */
+
+/**
+ * Post Card Container
+ * Clean, modern container with no visible borders or shadows
+ */
+.post-card {
+    margin: 0;
+    padding: 0;
+    border: none;
+    background: none;
+    box-shadow: none;
+}
+
+/**
+ * Post Image Container
+ * Sets up relative positioning for the image and title overlay
+ */
+.post-image-container {
+    position: relative;
+    margin: 0;
+    padding: 0;
+    border: none;
+    overflow: hidden;
+}
+
+/**
+ * Post Featured Image
+ * Clean image styling with no borders, padding, margins, or border radius
+ */
+.post-featured-image {
+    width: 100%;
+    height: 500px;
+    margin: 0;
+    padding: 0;
+    border: none;
+    display: block;
+}
+
+.post-featured-image img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    margin: 0;
+    padding: 0;
+    border: none;
+    display: block;
+}
+
+/**
+ * Post Title Overlay
+ * Modern overlay positioned over the image with clean styling
+ */
+.post-title-overlay {
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background: linear-gradient(135deg, 
+        rgba(0, 0, 0, 0.7) 0%, 
+        rgba(0, 0, 0, 0.4) 50%, 
+        rgba(0, 0, 0, 0.1) 100%);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: 0;
+    border: none;
+    border-radius: 5px;
+}
+
+/**
+ * Overlay Title Styling
+ * Modern typography with clean, minimal design
+ */
+.overlay-title {
+    color: white !important;
+    font-size: 1.5rem !important;
+    font-weight: 700 !important;
+    margin: 0 !important;
+    text-align: center !important;
+    line-height: 1.2 !important;
+    letter-spacing: -0.02em !important;
+    text-shadow: 0 1px 3px rgba(0, 0, 0, 0.3) !important;
+}
+
+.overlay-title a {
+    color: white !important;
+    text-decoration: none;
+    transition: all 0.3s cubic-bezier(0.4, 0, 0.2, 1);
+    display: block;
+    padding: 15px 20px;
+    background: transparent;
+    border: none;
+}
+
+.overlay-title a:hover {
+    transform: translateY(-2px);
+    text-shadow: 0 2px 8px rgba(0, 0, 0, 0.5);
+}
+
+/**
+ * Responsive Design for Post Cards
+ * Modern responsive adjustments for clean mobile experience
+ */
+@media (max-width: 1024px) {
+    .post-featured-image {
+        height: 280px;
+    }
+    
+    .overlay-title {
+        font-size: 1.3rem !important;
+    }
+    
+    .overlay-title a {
+        padding: 12px 18px;
+    }
+}
+
+@media (max-width: 768px) {
+    .post-featured-image {
+        height: 250px;
+    }
+    
+    .overlay-title {
+        font-size: 1.2rem !important;
+    }
+    
+    .overlay-title a {
+        padding: 10px 16px;
+    }
+}
+
+@media (max-width: 480px) {
+    .post-featured-image {
+        height: 200px;
+    }
+    
+    .overlay-title {
+        font-size: 1.1rem !important;
+    }
+    
+    .overlay-title a {
+        padding: 8px 14px;
+    }
+}
