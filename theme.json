@@ -350,6 +350,7 @@
 		},
 		"blocks": {
 			"core/cover": {
+				"css": "padding-block-start: 0; padding-block-end: 0;",
 				"color": {
 					"text": "#FFF"
 				},
@@ -420,8 +421,8 @@
 			"core/group": {
 				"spacing": {
 					"padding": {
-						"top": "28px",
-						"bottom": "28px",
+						"top": "clamp(1.75rem, 5vw, 3rem)",
+						"bottom": "clamp(1.75rem, 5vw, 3rem)",
 						"left": "28px",
 						"right": "28px"
 					}
