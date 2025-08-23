@@ -278,8 +278,35 @@ header .wp-block-navigation .wp-block-navigation-submenu .wp-block-navigation-it
    ========================================================================== */
 
 /**
+ * POST CARD SYSTEM
+ * 
+ * This section implements a modern, minimal post card design system
+ * that displays featured images with overlaid titles. The design
+ * emphasizes clean typography and subtle interactions.
+ * 
+ * Components:
+ * - .post-card: Main container wrapper
+ * - .post-image-container: Image and overlay positioning context
+ * - .post-featured-image: Featured image styling
+ * - .post-title-overlay: Title overlay container
+ * - .overlay-title: Title text styling
+ * 
+ * Features:
+ * - Edge-to-edge images with no borders or padding
+ * - Centered title overlays with gradient backgrounds
+ * - Responsive image heights and typography
+ * - Subtle hover animations on title links
+ * - Mobile-optimized layouts
+ * 
+ * Usage:
+ * Apply these classes to WordPress post templates or custom HTML
+ * structures that need featured image + title overlay layouts.
+ */
+
+/**
  * Post Card Container
  * Clean, modern container with no visible borders or shadows
+ * Provides the foundation for the card layout system
  */
 .post-card {
     margin: 0;
@@ -292,6 +319,7 @@ header .wp-block-navigation .wp-block-navigation-submenu .wp-block-navigation-it
 /**
  * Post Image Container
  * Sets up relative positioning for the image and title overlay
+ * Creates the positioning context for absolute overlay positioning
  */
 .post-image-container {
     position: relative;
@@ -303,7 +331,8 @@ header .wp-block-navigation .wp-block-navigation-submenu .wp-block-navigation-it
 
 /**
  * Post Featured Image
- * Clean image styling with no borders, padding, margins, or border radius
+ * Clean image styling with no borders, padding, or margins
+ * Uses object-fit: cover for consistent aspect ratios
  */
 .post-featured-image {
     width: 100%;
@@ -376,11 +405,28 @@ header .wp-block-navigation .wp-block-navigation-submenu .wp-block-navigation-it
     text-shadow: 0 2px 8px rgba(0, 0, 0, 0.5);
 }
 
+/* ==========================================================================
+   8. RESPONSIVE DESIGN & BREAKPOINTS
+   ========================================================================== */
+
 /**
- * Responsive Design for Post Cards
- * Modern responsive adjustments for clean mobile experience
+ * RESPONSIVE DESIGN SYSTEM
+ * 
+ * Consolidated responsive styles for all components
+ * Breakpoints follow mobile-first approach for optimal performance
+ * 
+ * Breakpoints:
+ * - 1024px: Tablet landscape and smaller desktops
+ * - 768px:  Tablet portrait and large mobile
+ * - 480px:  Mobile devices
+ * 
+ * Note: All responsive styles are consolidated here for easier
+ * maintenance and to avoid duplication across components.
  */
+
+/* Tablet Landscape & Small Desktop */
 @media (max-width: 1024px) {
+    /* Post Card System */
     .post-featured-image {
         height: 280px;
     }
@@ -394,7 +440,9 @@ header .wp-block-navigation .wp-block-navigation-submenu .wp-block-navigation-it
     }
 }
 
+/* Tablet Portrait & Large Mobile */
 @media (max-width: 768px) {
+    /* Post Card System */
     .post-featured-image {
         height: 250px;
     }
@@ -408,7 +456,9 @@ header .wp-block-navigation .wp-block-navigation-submenu .wp-block-navigation-it
     }
 }
 
+/* Mobile Devices */
 @media (max-width: 480px) {
+    /* Post Card System */
     .post-featured-image {
         height: 200px;
     }
