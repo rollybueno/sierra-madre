@@ -357,15 +357,22 @@
 					"h1": {
 						"typography": {
 							"fontSize": "var(--wp--preset--font-size--hero)",
-							"textTransform": "uppercase"							
+							"textTransform": "uppercase"
 						},
-						"css": "color: #FFF !important;"
+						"css": "color: #FFF !important; text-shadow: 0 1px 3px rgba(0, 0, 0, 0.5); margin-block-start: 0.47em; margin-block-end: 0.47em;"
 					},
 					"h2": {
 						"typography": {
 							"fontSize": "var(--wp--preset--font-size--xx-large)",
 							"textTransform": "uppercase",
 							"textColor": "#FFF"
+						}
+					},
+					"button": {
+						"spacing": {
+							"margin": {
+								"top": "clamp(1.75rem, 2vw, 3rem)"
+							}
 						}
 					}
 				}

@@ -278,6 +278,27 @@ header .wp-block-navigation .wp-block-navigation-submenu .wp-block-navigation-it
    ========================================================================== */
 
 /**
+ * HERO SECTION STYLING
+ * 
+ * Styles for the main hero section including headings, paragraphs,
+ * and other text elements to ensure proper contrast and readability
+ * over background images.
+ */
+
+/**
+ * Hero Paragraph Text
+ * Ensures hero paragraph text is white for visibility over background images
+ */
+ .wp-block-cover .wp-block-cover__inner-container p {
+    color: white !important;
+    text-shadow: 0 1px 3px rgba(0, 0, 0, 0.5);
+    font-size: var(--wp--preset--font-size--x-large);
+    font-weight: 400;
+    line-height: 1.6;
+}
+
+
+/**
  * POST CARD SYSTEM
  * 
  * This section implements a modern, minimal post card design system
