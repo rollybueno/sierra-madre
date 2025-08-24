@@ -160,6 +160,10 @@ Reference: https://fonts.google.com/specimen/Source+Sans+3/license?query=Source+
 Source: https://fonts.google.com/specimen/Source+Sans+3?query=Source+Sans+Pro
 
 = Credits =
+* nature-kayak.jpg, Nitish Meena - Stocksnap, CC0 (Public Domain Dedication), https://stocksnap.io/photo/nature-landscape-3W9FXAV8S4
+* grass-mountain.jpg, Brodie Vissers - Stocksnap, CC0 (Public Domain Dedication), https://stocksnap.io/photo/grass-mountain-FFG888AM6Q
+* thailand-travel.jpg, Mike Moloney - Stocksnap, CC0 (Public Domain Dedication), https://stocksnap.io/photo/thailand-travel-8G3RZBQRQD
+* girl-blonde.jpg, Elliott Chau - Stocksnap, CC0 (Public Domain Dedication), https://stocksnap.io/photo/girl-blonde-KRGPLX48G2
 * nature-landscape.jpg, Anna Jiménez Calaf - Stocksnap, CC0 (Public Domain Dedication), https://stocksnap.io/photo/nature-landscape-L0EBIBMPXA
 * person-hiking.jpg, Matt Bango - Stocksnap, CC0 (Public Domain Dedication), https://stocksnap.io/photo/person-hiking-EMCGGJD4OJ
 * saltflats.jpg, Matt Bango - Stocksnap, CC0 (Public Domain Dedication), https://stocksnap.io/photo/saltflats-sand-E5VPP5HDCQ

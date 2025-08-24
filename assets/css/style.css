@@ -296,34 +296,3 @@ header .wp-block-navigation .wp-block-navigation-submenu .wp-block-navigation-it
     font-weight: 400;
     line-height: 1.6;
 }
-
-/* ==========================================================================
-   8. RESPONSIVE DESIGN & BREAKPOINTS
-   ========================================================================== */
-
-/**
- * RESPONSIVE DESIGN SYSTEM
- * 
- * Consolidated responsive styles for all components
- * Breakpoints follow mobile-first approach for optimal performance
- * 
- * Breakpoints:
- * - 1024px: Tablet landscape and smaller desktops
- * - 768px:  Tablet portrait and large mobile
- * - 480px:  Mobile devices
- * 
- * Note: All responsive styles are consolidated here for easier
- * maintenance and to avoid duplication across components.
- */
-
-/* Tablet Landscape & Small Desktop */
-@media (max-width: 1024px) {
-}
-
-/* Tablet Portrait & Large Mobile */
-@media (max-width: 768px) { 
-}
-
-/* Mobile Devices */
-@media (max-width: 480px) {
-}
