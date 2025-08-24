@@ -296,3 +296,98 @@ header .wp-block-navigation .wp-block-navigation-submenu .wp-block-navigation-it
     font-weight: 400;
     line-height: 1.6;
 }
+
+/* ==========================================================================
+   8. HERO MASONRY LAYOUT STYLING
+   ========================================================================== */
+
+/**
+ * HERO MASONRY LAYOUT SYSTEM
+ * 
+ * Styles for the hero pattern's right column masonry layout
+ * that displays multiple images in a grid arrangement.
+ * 
+ * Components:
+ * - Right column container with padding
+ * - Masonry grid layout for images
+ * - Image styling and hover effects
+ * - Responsive grid adjustments
+ * 
+ * Features:
+ * - Top and bottom padding for the right column
+ * - Clean image grid with proper spacing
+ * - Subtle hover effects on images
+ * - Responsive layout that adapts to screen size
+ */
+
+/**
+ * Hero Right Column Styling
+ * Adds padding to the right column containing the masonry layout
+ * and centers the masonry content vertically
+ */
+.wp-block-cover .wp-block-columns .wp-block-column:last-child {
+    padding-top: 2rem !important;
+    padding-bottom: 2rem !important;
+    display: flex !important;
+    flex-direction: column !important;
+    justify-content: center !important;
+    align-items: center !important;
+}
+
+/**
+ * Masonry Grid Container
+ * Styles the nested columns for proper masonry layout
+ */
+.wp-block-cover .wp-block-columns .wp-block-column:last-child .wp-block-columns {
+    gap: 1rem !important;
+    margin-bottom: 1rem !important;
+}
+
+/**
+ * Masonry Images Styling
+ * Styles individual images in the masonry layout
+ */
+.wp-block-cover .wp-block-columns .wp-block-column:last-child .wp-block-image {
+    margin: 0 !important;
+    padding: 0 !important;
+    border-radius: 8px !important;
+    overflow: hidden !important;
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1) !important;
+    transition: all 0.3s ease !important;
+}
+
+.wp-block-cover .wp-block-columns .wp-block-column:last-child .wp-block-image:hover {
+    transform: translateY(-4px) !important;
+    box-shadow: 0 8px 25px rgba(0, 0, 0, 0.15) !important;
+}
+
+/**
+ * Masonry Image Styling
+ * Styles the actual image elements
+ */
+.wp-block-cover .wp-block-columns .wp-block-column:last-child .wp-block-image img {
+    width: 100% !important;
+    height: auto !important;
+    display: block !important;
+    transition: transform 0.3s ease !important;
+}
+
+.wp-block-cover .wp-block-columns .wp-block-column:last-child .wp-block-image:hover img {
+    transform: scale(1.05) !important;
+}
+
+/**
+ * First Row Masonry (3 columns)
+ * Ensures proper spacing for the top row
+ */
+.wp-block-cover .wp-block-columns .wp-block-column:last-child .wp-block-columns:first-child {
+    margin-bottom: 1rem !important;
+}
+
+/**
+ * Second Row Masonry (2 columns)
+ * Styles the bottom row with larger image
+ */
+.wp-block-cover .wp-block-columns .wp-block-column:last-child .wp-block-columns:last-child {
+    gap: 1rem !important;
+}
