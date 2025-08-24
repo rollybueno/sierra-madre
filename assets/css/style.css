@@ -324,56 +324,60 @@ header .wp-block-navigation .wp-block-navigation-submenu .wp-block-navigation-it
  * Hero Right Column Styling
  * Adds padding to the right column containing the masonry layout
  * and centers the masonry content vertically
+ * Uses high specificity instead of !important
  */
 .wp-block-cover .wp-block-columns .wp-block-column:last-child {
-    padding-top: 2rem !important;
-    padding-bottom: 2rem !important;
-    display: flex !important;
-    flex-direction: column !important;
-    justify-content: center !important;
-    align-items: center !important;
+    padding-top: 3rem;
+    padding-bottom: 3rem;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
 }
 
 /**
  * Masonry Grid Container
  * Styles the nested columns for proper masonry layout
+ * Uses high specificity selectors
  */
 .wp-block-cover .wp-block-columns .wp-block-column:last-child .wp-block-columns {
-    gap: 1rem !important;
-    margin-bottom: 1rem !important;
+    gap: 1rem;
+    margin-bottom: 1rem;
 }
 
 /**
  * Masonry Images Styling
  * Styles individual images in the masonry layout
+ * Uses high specificity and modern CSS features
  */
 .wp-block-cover .wp-block-columns .wp-block-column:last-child .wp-block-image {
-    margin: 0 !important;
-    padding: 0 !important;
-    border-radius: 8px !important;
-    overflow: hidden !important;
-    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1) !important;
-    transition: all 0.3s ease !important;
+    margin: 0;
+    padding: 0;
+    border-radius: 8px;
+    overflow: hidden;
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+    transition: all 0.3s ease;
 }
 
 .wp-block-cover .wp-block-columns .wp-block-column:last-child .wp-block-image:hover {
-    transform: translateY(-4px) !important;
-    box-shadow: 0 8px 25px rgba(0, 0, 0, 0.15) !important;
+    transform: translateY(-4px);
+    box-shadow: 0 8px 25px rgba(0, 0, 0, 0.15);
 }
 
 /**
  * Masonry Image Styling
  * Styles the actual image elements
+ * Uses high specificity selectors
  */
 .wp-block-cover .wp-block-columns .wp-block-column:last-child .wp-block-image img {
-    width: 100% !important;
-    height: auto !important;
-    display: block !important;
-    transition: transform 0.3s ease !important;
+    width: 100%;
+    height: auto;
+    display: block;
+    transition: transform 0.3s ease;
 }
 
 .wp-block-cover .wp-block-columns .wp-block-column:last-child .wp-block-image:hover img {
-    transform: scale(1.05) !important;
+    transform: scale(1.05);
 }
 
 /**
@@ -381,7 +385,7 @@ header .wp-block-navigation .wp-block-navigation-submenu .wp-block-navigation-it
  * Ensures proper spacing for the top row
  */
 .wp-block-cover .wp-block-columns .wp-block-column:last-child .wp-block-columns:first-child {
-    margin-bottom: 1rem !important;
+    margin-bottom: 1rem;
 }
 
 /**
@@ -389,5 +393,5 @@ header .wp-block-navigation .wp-block-navigation-submenu .wp-block-navigation-it
  * Styles the bottom row with larger image
  */
 .wp-block-cover .wp-block-columns .wp-block-column:last-child .wp-block-columns:last-child {
-    gap: 1rem !important;
+    gap: 1rem;
 }
